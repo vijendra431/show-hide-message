@@ -3,23 +3,23 @@ import {Component} from 'react'
 import './index.css'
 
 class ShowHide extends Component {
-  state = {firstMessage: false, lastMessage: false}
+  state = {setfirstMessage: false, setlastMessage: false}
 
   showFirstMessage = () => {
-    const {firstMessage} = this.state
+    const {setfirstMessage} = this.state
     this.setState(prevState => ({
-      firstMessage: !prevState.firstMessage,
+      setfirstMessage: !prevState.setfirstMessage,
     }))
   }
 
   showLastMessage = () => {
-    const {lastMessage} = this.state
+    const {setlastMessage} = this.state
     this.setState(prevState => ({
-      lastMessage: !prevState.lastMessage,
+      setlastMessage: !prevState.setlastMessage,
     }))
   }
   render() {
-    const {firstMessage, lastMessage} = this.state
+    const {setfirstMessage, setlastMessage} = this.state
 
     return (
       <div className="app-container">
